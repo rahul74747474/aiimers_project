@@ -33,8 +33,8 @@ const Colleges = () => {
   useEffect(() => {
     const fetchColleges = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/colleges`);
-console.log("API URL is:", import.meta.env.VITE_API_URL);
+        const res = await axios.get(`https://aiimers-project.onrender.com/api/colleges`);
+
         
         // ✅ Format the response properly
         const formatted: College[] = res.data.map((college: any) => ({
