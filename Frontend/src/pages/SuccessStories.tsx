@@ -53,7 +53,7 @@ const SuccessStories = () => {
       try {
         const [storiesRes, videosRes] = await Promise.all([
           axios.get(`https://aiimers-project.onrender.com/api/success-stories`),
-          axios.get(`https://aiimers-project.onrender.com/api/videos`),
+          //axios.get(`https://aiimers-project.onrender.com/api/videos`),
         ]);
         setStories(storiesRes.data || []);
         setVideos(videosRes.data || []);
