@@ -46,7 +46,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/testimonials`);
+        const res = await fetch(`https://aiimers-project.vercel.app/api/testimonials`);
         const data = await res.json();
         setTestimonials(data);
       } catch (err) {
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     const fetchColleges = async () => {
       try {
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/colleges`);
+        const res = await fetch(`https://aiimers-project.vercel.app/api/colleges`);
         const data = await res.json();
         setColleges(data);
       } catch (error) {
