@@ -15,7 +15,7 @@ connectDB();
 const app = express();
 app.use(
   cors({
-    origin: "https://totals-brooks-timber-river.trycloudflare.com",
+    origin: "https://aiimers-project.vercel.app",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -34,3 +34,4 @@ app.use('/api/otp', otpRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
